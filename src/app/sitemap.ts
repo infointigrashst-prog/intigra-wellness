@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next';
 import { SITE_URL } from '../seo-config';
+import { servicesDetailsData } from '../services-data';
+import { exercisesData } from '../exercises-data';
 
 /**
  * Dynamic sitemap.xml
@@ -55,12 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  /**
-   * Service category deep-links — each category URL gets its own sitemap entry
-   * so search engines index /services?cat=ortho style pages too.
-   * NOTE: If you later add individual service detail pages (/services/back-pain),
-   * add them here dynamically from a CMS or data source.
-   */
+  /** Service category deep-links */
   const serviceCategories = ['ortho', 'neuro', 'special', 'technique'];
   const categoryRoutes: MetadataRoute.Sitemap = serviceCategories.map((cat) => ({
     url: `${SITE_URL}/services?cat=${cat}`,
@@ -69,5 +66,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...categoryRoutes];
+  /** Individual service detail pages indexed dynamically */
+  const serviceDetailRoutes: MetadataRoute.Sitemap = Object.keys(servicesDetailsData).map((slug) => ({
+    url: `${SITE_URL}/services/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.85,
+  }));
+
+  /** Individual exercise detail pages indexed dynamically */
+  const exerciseDetailRoutes: MetadataRoute.Sitemap = Object.keys(exercisesData).map((slug) => ({
+    url: `${SITE_URL}/exercises/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticRoutes,
+    ...categoryRoutes,
+    ...serviceDetailRoutes,
+    ...exerciseDetailRoutes
+  ];
 }

@@ -11,18 +11,9 @@ import { servicesDetailsData } from '../../../services-data';
 export default function ServiceDetailPage() {
   const params = useParams();
   const router = useRouter();
-  const [darkMode, setDarkMode] = useState(false);
 
   const slug = typeof params?.slug === 'string' ? params.slug : '';
   const service = servicesDetailsData[slug];
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-      setDarkMode(true);
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
-  }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -45,10 +36,10 @@ export default function ServiceDetailPage() {
 
   if (!service) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-slate-50 dark:bg-slate-900">
+      <div className="flex items-center justify-center min-h-screen bg-slate-50">
         <div className="text-center">
           <i className="fa-solid fa-spinner fa-spin text-3xl text-teal-600 mb-4"></i>
-          <p className="text-slate-600 dark:text-slate-350">Loading service details...</p>
+          <p className="text-slate-600">Loading service details...</p>
         </div>
       </div>
     );
@@ -58,9 +49,9 @@ export default function ServiceDetailPage() {
     <>
       <SiteHeader />
       
-      <main id="main" className="pt-[0px]" style={{ minHeight: '80vh' }}>
+      <main id="main" style={{ minHeight: '80vh' }}>
         {/* Service Header Section */}
-        <section className="service-hero" style={{ background: 'var(--cream-2)', padding: '60px 0 45px' }}>
+        <section className="service-hero" style={{ background: 'var(--cream-2)', padding: '40px 0 45px' }}>
           <div className="container">
             <Link href="/services" className="btn-outline mb-4" style={{ padding: '8px 16px', fontSize: '0.85rem' }}>
               <i className="fa-solid fa-arrow-left"></i> Back to All Services

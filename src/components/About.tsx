@@ -63,16 +63,25 @@ export default function About() {
     <section id="about" className="about-section">
       {/* ── Page Hero Banner ── */}
       <div className="about-hero-banner">
-        <div className="container">
-          <span className="eyebrow" data-aos="fade-up">Meet Your Physiotherapist</span>
-          <h1 className="h-lg about-hero-title" data-aos="fade-up" data-aos-delay="80">
-            Dr. Disha Vaghasiya<br />
-            <span className="about-hero-accent">Care that listens before it treats.</span>
-          </h1>
-          <p className="about-hero-sub" data-aos="fade-up" data-aos-delay="160">
-            Ahmedabad&apos;s trusted physiotherapist combining evidence-based manual therapy,
-            modern electrotherapy and structured rehabilitation.
-          </p>
+        <div className="container about-hero-grid">
+          <div className="about-hero-left">
+            <span className="eyebrow" data-aos="fade-up">Meet Your Physiotherapist</span>
+            <h1 className="h-lg about-hero-title" data-aos="fade-up" data-aos-delay="80">
+              Dr. Disha Vaghasiya<br />
+              <span className="about-hero-accent">Care that listens before it treats.</span>
+            </h1>
+            <p className="about-hero-sub" data-aos="fade-up" data-aos-delay="160">
+              Ahmedabad&apos;s trusted physiotherapist combining evidence-based manual therapy,
+              modern electrotherapy and structured rehabilitation.
+            </p>
+          </div>
+          <div className="about-hero-right" data-aos="fade-left" data-aos-delay="200">
+            <div className="about-hero-graphic-wrap">
+              <div className="about-hero-circle">
+                <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS" />
+              </div>
+            </div>
+          </div>
         </div>
         {/* decorative blobs */}
         <div className="about-blob about-blob-1" aria-hidden="true" />

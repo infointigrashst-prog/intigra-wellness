@@ -51,16 +51,19 @@ export default function SiteHeader() {
 
           {/* ── Desktop Nav ── */}
           <nav className="main-nav desktop-nav" aria-label="Main navigation">
-            {navLinks.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className={`nav-link ${pathname === href ? 'active' : ''}`}
-              >
-                {label}
-                <span className="nav-underline" />
-              </Link>
-            ))}
+            {navLinks.map(({ href, label }) => {
+              const active = href === '/' ? pathname === '/' : pathname === href || pathname?.startsWith(href + '/');
+              return (
+                <Link
+                  key={href}
+                  href={href}
+                  className={`nav-link ${active ? 'active' : ''}`}
+                >
+                  {label}
+                  <span className="nav-underline" />
+                </Link>
+              );
+            })}
           </nav>
 
           {/* ── Header Right ── */}
@@ -110,21 +113,24 @@ export default function SiteHeader() {
 
         {/* Nav Links */}
         <nav className="drawer-nav" aria-label="Mobile navigation links">
-          {navLinks.map(({ href, label, icon }, i) => (
-            <Link
-              key={href}
-              href={href}
-              className={`drawer-link ${pathname === href ? 'active' : ''}`}
-              onClick={close}
-              style={{ animationDelay: `${i * 55}ms` }}
-            >
-              <span className="drawer-icon">
-                <i className={`fa-solid ${icon}`}></i>
-              </span>
-              <span className="drawer-label">{label}</span>
-              <i className="fa-solid fa-chevron-right drawer-arrow"></i>
-            </Link>
-          ))}
+          {navLinks.map(({ href, label, icon }, i) => {
+            const active = href === '/' ? pathname === '/' : pathname === href || pathname?.startsWith(href + '/');
+            return (
+              <Link
+                key={href}
+                href={href}
+                className={`drawer-link ${active ? 'active' : ''}`}
+                onClick={close}
+                style={{ animationDelay: `${i * 55}ms` }}
+              >
+                <span className="drawer-icon">
+                  <i className={`fa-solid ${icon}`}></i>
+                </span>
+                <span className="drawer-label">{label}</span>
+                <i className="fa-solid fa-chevron-right drawer-arrow"></i>
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Drawer CTA */}
