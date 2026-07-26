@@ -13,7 +13,7 @@ export default function SiteFooter() {
           <div className="footer-brand-column">
             <div className="footer-brand">
               <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS footer emblem" />
-              <b>INTIGRA<small style={{ display: 'block', fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal-light)' }}>Wellness</small></b>
+              {/* <b>INTIGRA<small style={{ display: 'block', fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal-light)' }}>Wellness</small></b> */}
             </div>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.84rem', marginTop: '16px' }}>
               Professional physiotherapy clinic in Ahmedabad under Dr. Disha Vaghasiya. Custom recovery plans designed to bring you strength, balance, and mobility.

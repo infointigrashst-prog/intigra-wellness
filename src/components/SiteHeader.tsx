@@ -38,15 +38,13 @@ export default function SiteHeader() {
       <header id="site-header" className={[scrolled ? 'scrolled' : '', menuOpen ? 'menu-active' : ''].join(' ')}>
         <div className="container nav-wrap">
 
-          {/* ── Brand ── */}
           <Link href="/" className="brand" onClick={close}>
-            <div className="brand-logo-ring">
-              <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS" />
-            </div>
-            <div className="brand-text">
-              <span className="brand-name">INTIGRA</span>
-              <span className="brand-sub">Wellness</span>
-            </div>
+            <img 
+              src="/assets/logo-mark.png" 
+              alt="INTIGRA WELLNESS" 
+              className="brand-logo-img"
+              style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
+            />
           </Link>
 
           {/* ── Desktop Nav ── */}
