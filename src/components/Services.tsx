@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const servicesData = [
   // Orthopedic
-  { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-spine', title: 'Back Pain', desc: 'Targeted relief for acute & chronic lower and upper back pain.', slug: 'back-pain' },
+  { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-heart-pulse', title: 'Back Pain', desc: 'Targeted relief for acute & chronic lower and upper back pain.', slug: 'back-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-head-side-cough', title: 'Neck Pain', desc: 'Mobility restoration for stiff, painful or restricted neck movement.', slug: 'neck-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-bone', title: 'Cervical Pain', desc: 'Cervical spondylosis & nerve-related neck-shoulder discomfort.', slug: 'neck-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-disease', title: 'Slip Disc', desc: 'Non-surgical, structured recovery for herniated / prolapsed discs.', slug: 'slip-disc' },

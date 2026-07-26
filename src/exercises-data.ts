@@ -90,7 +90,7 @@ export const exercisesData: Record<string, Exercise> = {
     cat: 'strength',
     slug: 'isometric-glute-bridges',
     title: 'Isometric Glute Bridges',
-    icon: 'fa-solid fa-weight-lifting',
+    icon: 'fa-solid fa-dumbbell',
     duration: '3 Sets · 12 Reps',
     purpose: 'Builds gluteal strength, reducing compression load on the lower back.',
     image: '/assets/exercises/glute-bridge.png',

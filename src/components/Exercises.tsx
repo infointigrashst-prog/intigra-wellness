@@ -62,21 +62,40 @@ export default function Exercises() {
                 <h4>{ex.title}</h4>
                 <p className="purpose" style={{ minHeight: '52px' }}>{ex.purpose}</p>
                 
-                <div className="d-flex gap-2 w-100">
+                <div className="d-flex gap-2 w-100" style={{ padding: '0 22px 22px' }}>
                   <button 
-                    className="exercise-toggle flex-grow-1"
+                    className="btn-outline d-flex align-items-center justify-content-center"
                     onClick={() => toggleDetails(ex.id)}
-                    style={{ fontSize: '0.82rem', padding: '10px 12px' }}
+                    style={{ 
+                      fontSize: '0.82rem', 
+                      height: '44px', 
+                      borderRadius: '12px', 
+                      border: '1px solid rgba(14, 124, 134, 0.15)', 
+                      background: 'none', 
+                      cursor: 'pointer', 
+                      color: 'var(--teal)', 
+                      fontWeight: '700',
+                      flex: 1
+                    }}
                   >
                     <span>{isOpen ? 'Hide Steps' : 'Quick View Steps'}</span>
                     <i className={`fa-solid ${isOpen ? 'fa-chevron-up' : 'fa-chevron-down'}`} style={{ marginLeft: '6px' }}></i>
                   </button>
                   <Link 
                     href={`/exercises/${ex.slug}`} 
-                    className="btn-outline no-underline d-flex align-items-center justify-content-center"
-                    style={{ fontSize: '0.82rem', padding: '10px 16px', borderRadius: '12px' }}
+                    className="btn-brand no-underline d-flex align-items-center justify-content-center"
+                    style={{ 
+                      fontSize: '0.95rem', 
+                      width: '44px', 
+                      height: '44px', 
+                      padding: '0', 
+                      borderRadius: '12px', 
+                      flexShrink: 0, 
+                      textDecoration: 'none' 
+                    }}
+                    title="View Full Details"
                   >
-                    <i className="fa-solid fa-circle-info"></i>
+                    <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
 
