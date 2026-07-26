@@ -13,7 +13,7 @@ export default function ProcessTimeline() {
       <div className="container">
         <div className="section-head" data-aos="fade-up">
           <span className="eyebrow">How We Work</span>
-          <h2 class="h-lg">Your Path to Pain-Free Living</h2>
+          <h2 className="h-lg">Your Path to Pain-Free Living</h2>
           <p>A systematic, clinically structured workflow designed to ensure safe recovery and long-term functional mobility.</p>
         </div>
 
