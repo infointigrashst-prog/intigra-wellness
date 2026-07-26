@@ -90,7 +90,7 @@ export default function SiteHeader() {
       <div
         className={`mobile-overlay ${menuOpen ? 'visible' : ''}`}
         onClick={close}
-        aria-hidden="true"
+        aria-hidden="true" 
       />
 
       <aside className={`mobile-drawer ${menuOpen ? 'open' : ''}`} aria-label="Mobile navigation">
