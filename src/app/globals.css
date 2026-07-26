@@ -902,6 +902,7 @@ header#site-header.scrolled .brand-logo-ring img {
   display: flex;
   gap: 28px;
   margin-top: 44px;
+  margin-bottom: 80px;
   flex-wrap: wrap;
 }
 
@@ -3028,6 +3029,7 @@ footer ul a:hover {
 
   .hero-trust {
     justify-content: center;
+    margin-bottom: 24px;
   }
 
   .hero-visual {
