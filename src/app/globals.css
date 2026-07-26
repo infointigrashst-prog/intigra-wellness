@@ -3370,3 +3370,13 @@ footer ul a:hover {
     position: static !important;
   }
 }
+
+/* Contact link hovers */
+.contact-link-hover {
+  transition: color 0.25s ease;
+}
+
+.contact-link-hover:hover {
+  color: var(--amber) !important;
+  text-decoration: underline !important;
+}

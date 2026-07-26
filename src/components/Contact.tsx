@@ -55,8 +55,26 @@ export default function Contact() {
                 </div>
                 <div>
                   <b>Quick Communication</b>
-                  <div>Direct Phone: {clinicContactDetails.phone}</div>
-                  <div>Email: {clinicContactDetails.email}</div>
+                  <div style={{ marginTop: '4px' }}>
+                    Direct Phone:{' '}
+                    <a 
+                      href={`tel:${clinicContactDetails.phoneDialable}`} 
+                      style={{ color: 'var(--teal)', fontWeight: '700', textDecoration: 'none' }}
+                      className="contact-link-hover"
+                    >
+                      {clinicContactDetails.phone}
+                    </a>
+                  </div>
+                  <div style={{ marginTop: '2px' }}>
+                    Email:{' '}
+                    <a 
+                      href={`mailto:${clinicContactDetails.email}`} 
+                      style={{ color: 'var(--teal)', fontWeight: '700', textDecoration: 'none' }}
+                      className="contact-link-hover"
+                    >
+                      {clinicContactDetails.email}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

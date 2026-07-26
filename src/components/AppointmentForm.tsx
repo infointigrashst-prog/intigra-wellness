@@ -95,7 +95,15 @@ Here are my details:
                 </div>
                 <div>
                   <b>Call for Queries</b>
-                  <span>{clinicContactDetails.phone}</span>
+                  <span>
+                    <a 
+                      href={`tel:${clinicContactDetails.phoneDialable}`} 
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                      className="contact-link-hover"
+                    >
+                      {clinicContactDetails.phone}
+                    </a>
+                  </span>
                 </div>
               </li>
               <li>
@@ -113,7 +121,15 @@ Here are my details:
                 </div>
                 <div>
                   <b>Email Us</b>
-                  <span>{clinicContactDetails.email}</span>
+                  <span>
+                    <a 
+                      href={`mailto:${clinicContactDetails.email}`} 
+                      style={{ color: 'inherit', textDecoration: 'none' }}
+                      className="contact-link-hover"
+                    >
+                      {clinicContactDetails.email}
+                    </a>
+                  </span>
                 </div>
               </li>
             </ul>
