@@ -385,10 +385,10 @@ header#site-header.scrolled {
 }
 
 .brand-logo-img {
-  height: 124px !important;
-  margin-top: -32px;
-  margin-bottom: -36px;
-  margin-left: -22px;
+  height: 116px !important;
+  margin-top: -28px;
+  margin-bottom: -32px;
+  margin-left: -20px;
   transition: all .3s ease;
 }
 
@@ -397,10 +397,10 @@ header#site-header.scrolled {
 }
 
 header#site-header.scrolled .brand-logo-img {
-  height: 110px !important;
-  margin-top: -26px;
-  margin-bottom: -28px;
-  margin-left: -18px;
+  height: 90px !important;
+  margin-top: -18px;
+  margin-bottom: -22px;
+  margin-left: -16px;
 }
 
 .brand-text {
@@ -3066,7 +3066,7 @@ footer ul a:hover {
   }
 
   .brand-logo-img {
-    height: 92px !important;
+    height: 95px !important;
     margin-top: -20px;
     margin-bottom: -24px;
     margin-left: -16px;

@@ -12,7 +12,7 @@ export const PHONE = '+91-9426638270';
 export const EMAIL = 'dr.dishavaghasiya@gmail.com';
 export const LOCATION = 'Bodakdev, Ahmedabad, Gujarat, India';
 export const OG_IMAGE = `${SITE_URL}/assets/og-image.png`;
-export const LOGO = `${SITE_URL}/assets/logo-full.png`;
+export const LOGO = `${SITE_URL}/assets/intigra-wellness-logo_3.jpeg`;
 
 /** Shared keyword base — added to every page */
 const BASE_KEYWORDS = [

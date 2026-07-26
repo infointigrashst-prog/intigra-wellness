@@ -78,7 +78,7 @@ export default function About() {
           <div className="about-hero-right" data-aos="fade-left" data-aos-delay="200">
             <div className="about-hero-graphic-wrap">
               <div className="about-hero-circle">
-                <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS" />
+                <img src="/assets/intigra-wellness-logo_3.jpeg" alt="INTIGRA WELLNESS" />
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function About() {
           <div className="about-photo-card">
             <div className="about-photo-frame">
               <img
-                src="/assets/logo-full.png"
+                src="/assets/intigra-wellness-logo_3.jpeg"
                 alt="Dr. Disha Vaghasiya — INTIGRA WELLNESS Physiotherapist Ahmedabad"
               />
             </div>

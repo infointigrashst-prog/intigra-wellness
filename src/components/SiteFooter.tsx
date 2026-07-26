@@ -12,7 +12,7 @@ export default function SiteFooter() {
         <div className="container footer-grid" data-aos="fade-up">
           <div className="footer-brand-column">
             <div className="footer-brand">
-              <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS footer emblem" />
+              <img src="/assets/intigra-wellness-logo_3.jpeg" alt="INTIGRA WELLNESS footer emblem" />
               {/* <b>INTIGRA<small style={{ display: 'block', fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal-light)' }}>Wellness</small></b> */}
             </div>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.84rem', marginTop: '16px' }}>
@@ -69,7 +69,7 @@ export default function SiteFooter() {
       <div className="footer-mobile">
         {/* Brand Row */}
         <div className="fmob-brand">
-          <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS" />
+          <img src="/assets/intigra-wellness-logo_3.jpeg" alt="INTIGRA WELLNESS" />
           <div>
             <b>INTIGRA WELLNESS</b>
             <span>Physiotherapy &amp; Rehabilitation, Ahmedabad</span>

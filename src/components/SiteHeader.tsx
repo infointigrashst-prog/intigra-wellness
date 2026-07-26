@@ -40,7 +40,7 @@ export default function SiteHeader() {
 
           <Link href="/" className="brand" onClick={close}>
             <img 
-              src="/assets/logo-mark.png" 
+              src="/assets/intigra-wellness-logo_3.jpeg" 
               alt="INTIGRA WELLNESS" 
               className="brand-logo-img"
               style={{ height: '42px', width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} 
@@ -98,7 +98,7 @@ export default function SiteHeader() {
         {/* Drawer header */}
         <div className="drawer-head">
           <div className="drawer-brand">
-            <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS" />
+            <img src="/assets/intigra-wellness-logo_3.jpeg" alt="INTIGRA WELLNESS" />
             <div>
               <strong>INTIGRA</strong>
               <small>Wellness — Physiotherapy</small>

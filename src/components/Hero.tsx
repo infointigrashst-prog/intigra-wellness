@@ -86,7 +86,7 @@ export default function Hero() {
         <div className="hero-visual" data-aos="zoom-in" data-aos-delay="150">
           <div className="hero-ring"></div>
           <div className="hero-logo-plate">
-            <img src="/assets/logo-mark.png" alt="INTIGRA WELLNESS spine and movement emblem" />
+            <img src="/assets/intigra-wellness-logo_3.jpeg" alt="INTIGRA WELLNESS spine and movement emblem" />
           </div>
           <div className="floating-pill glass p1"><i className="fa-solid fa-bone"></i> Spine Health</div>
           <div className="floating-pill glass p2"><i className="fa-solid fa-person-walking"></i> Posture Correction</div>
