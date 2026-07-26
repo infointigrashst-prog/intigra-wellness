@@ -24,14 +24,6 @@ export default function ServiceDetailPage() {
     }
   }, []);
 
-  const toggleDarkMode = () => {
-    const newMode = !darkMode;
-    setDarkMode(newMode);
-    const themeStr = newMode ? 'dark' : 'light';
-    localStorage.setItem('theme', themeStr);
-    document.documentElement.setAttribute('data-theme', themeStr);
-  };
-
   useEffect(() => {
     if (typeof window !== 'undefined') {
       import('aos').then((AOS) => {
@@ -64,7 +56,7 @@ export default function ServiceDetailPage() {
 
   return (
     <>
-      <SiteHeader darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <SiteHeader />
       
       <main id="main" className="pt-[0px]" style={{ minHeight: '80vh' }}>
         {/* Service Header Section */}
