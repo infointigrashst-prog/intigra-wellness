@@ -84,7 +84,7 @@ Here are my details:
         <div className="appointment-wrap">
           <div className="appt-info" data-aos="fade-right">
             <span className="eyebrow">Consultation Booking</span>
-            <h2 className="h-lg">Book Your Recovery Session</h2>
+            <h1 className="h-lg">Book Your Recovery Session</h1>
             <p>
               Fill out the details to request an appointment. Dr. Disha Vaghasiya or our wellness coordinator will contact you to confirm a time slot.
             </p>

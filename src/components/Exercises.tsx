@@ -28,7 +28,7 @@ export default function Exercises() {
       <div className="container">
         <div className="section-head" data-aos="fade-up">
           <span className="eyebrow">Exercise Library</span>
-          <h2 className="h-lg">Active Recovery at Home</h2>
+          <h1 className="h-lg">Active Recovery at Home</h1>
           <p>Simple, evidence-guided routines curated by Dr. Disha Vaghasiya to speed up clinical recovery and maintain pain-free mobility.</p>
         </div>
 

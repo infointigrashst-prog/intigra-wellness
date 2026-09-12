@@ -65,7 +65,7 @@ export default function Services() {
       <div className="container">
         <div className="section-head" data-aos="fade-up">
           <span className="eyebrow">What We Treat</span>
-          <h2 className="h-lg">Comprehensive physiotherapy, tailored to you.</h2>
+          <h1 className="h-lg">Comprehensive physiotherapy, tailored to you.</h1>
           <p>From acute pain to long-term neurological rehabilitation, every service is delivered with the same personal attention.</p>
         </div>
 

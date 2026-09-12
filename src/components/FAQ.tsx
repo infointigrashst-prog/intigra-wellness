@@ -40,7 +40,7 @@ export default function FAQ() {
       <div className="container" style={{ maxWidth: '800px' }}>
         <div className="section-head" data-aos="fade-up">
           <span className="eyebrow">Got Questions?</span>
-          <h2 className="h-lg">Frequently Asked Questions</h2>
+          <h1 className="h-lg">Frequently Asked Questions</h1>
           <p>Common questions about clinic appointments, treatment programs, and home visit guidelines.</p>
         </div>
 

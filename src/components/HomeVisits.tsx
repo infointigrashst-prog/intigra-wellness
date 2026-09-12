@@ -12,7 +12,7 @@ export default function HomeVisits() {
         <div className="homevisit-wrap" data-aos="fade-up">
           <div className="hv-info">
             <span className="eyebrow" style={{ color: 'var(--amber)' }}>Doorstep Rehabilitation</span>
-            <h2 className="h-lg">Professional Physiotherapy at Your Home</h2>
+            <h1 className="h-lg">Professional Physiotherapy at Your Home</h1>
             <p>
               For patients experiencing severe mobility restrictions, recovering from a stroke, or managing acute orthopedic pain, Dr. Disha Vaghasiya offers comprehensive home visit physiotherapy packages.
             </p>
