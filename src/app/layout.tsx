@@ -3,6 +3,7 @@ import './globals.css';
 import {
   SITE_NAME, DOCTOR_NAME, PHONE, EMAIL, LOGO, OG_IMAGE, SITE_URL
 } from '../seo-config';
+import GoogleAnalytics from "../components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -142,6 +143,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics/>
         <a href="#main" className="skip-link">Skip to content</a>
         {children}
       </body>
