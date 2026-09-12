@@ -1186,8 +1186,8 @@ header#site-header.scrolled .brand-logo-img {
 }
 
 .about-hero-circle {
-  width: 220px;
-  height: 220px;
+  width: 360px;
+  height: 360px;
   border-radius: 50%;
   background: #ffffff;
   border: 1.5px solid rgba(32, 131, 122, 0.2);
@@ -1201,8 +1201,8 @@ header#site-header.scrolled .brand-logo-img {
 }
 
 .about-hero-circle img {
-  width: 130px;
-  height: 130px;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
   mix-blend-mode: multiply;
 }
