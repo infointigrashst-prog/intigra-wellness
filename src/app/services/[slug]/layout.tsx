@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       images: [
         {
-          url: `${siteUrl}/assets/intigra-wellness-logo_3.jpeg`,
+          url: `${siteUrl}/assets/intigra-wellness-logo_4.jpeg`,
           width: 800,
           height: 600,
           alt: currentService.title,
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title: `${currentService.title} | ${SITE_NAME}`,
       description: seoDescription,
-      images: [`${siteUrl}/assets/intigra-wellness-logo_3.jpeg`],
+      images: [`${siteUrl}/assets/intigra-wellness-logo_4.jpeg`],
     },
     other: {
       'geo.region': 'IN-GJ',
