@@ -23,6 +23,10 @@ const BASE_KEYWORDS = [
   'home physiotherapy Ahmedabad',
   'rehabilitation clinic Ahmedabad',
   'Bodakdev physiotherapy',
+  'best physiotherapist in Ahmedabad',
+  'top physiotherapy clinic near me',
+  'physiotherapy at home in Ahmedabad',
+  'Home Visit Physiotherapy in Ahmedabad',
 ];
 
 export type PageSEO = {
@@ -111,6 +115,8 @@ export const PAGE_SEO: Record<string, PageSEO> = {
       'stroke rehabilitation home visit',
       'elderly physiotherapy home',
       'post surgery home physiotherapy',
+      'Best physiotherapist for home visits in Ahmedabad',
+      'home visit physiotherapist near me',
     ],
     canonical: `${SITE_URL}/home-visits`,
   },

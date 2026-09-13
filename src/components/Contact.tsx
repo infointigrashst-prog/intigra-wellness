@@ -7,8 +7,8 @@ export default function Contact() {
       <div className="container">
         <div className="section-head" data-aos="fade-up">
           <span className="eyebrow">Contact Information</span>
-          <h2 className="h-lg">Visit Our Clinic</h2>
-          <p>Get in touch or stop by our clinic for orthopedic, spine, sport, and neurological rehabilitation.</p>
+          <h2 className="h-lg">Visit Our Clinic or Book a Home Visit</h2>
+          <p>Get in touch or stop by our clinic for orthopedic, spine, sport, and neurological rehabilitation. We also offer specialized <strong>Home Visit Physiotherapy in Ahmedabad</strong> for patients with severe mobility restrictions.</p>
         </div>
 
         <div className="row g-4" data-aos="fade-up">

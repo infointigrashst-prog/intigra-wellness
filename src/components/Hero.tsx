@@ -49,7 +49,7 @@ export default function Hero() {
             <span className="italic-accent">Live Better.</span>
           </h1>
           <p className="lead">
-            Dr. Disha Vaghasiya designs personalised physiotherapy plans that treat the root cause of pain — combining advanced rehabilitation techniques with the comfort of clinic or home visit care, right across Ahmedabad.
+            Dr. Disha Vaghasiya designs personalised physiotherapy plans that treat the root cause of pain — combining advanced rehabilitation techniques with the comfort of our clinic or our specialized <strong>Home Visit Physiotherapy in Ahmedabad</strong>.
           </p>
           <div className="hero-ctas">
             <a href="/contact-us#appointment" className="btn-brand">

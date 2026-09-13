@@ -12,9 +12,9 @@ export default function HomeVisits() {
         <div className="homevisit-wrap" data-aos="fade-up">
           <div className="hv-info">
             <span className="eyebrow" style={{ color: 'var(--amber)' }}>Doorstep Rehabilitation</span>
-            <h1 className="h-lg">Professional Physiotherapy at Your Home</h1>
+            <h1 className="h-lg">Home Visit Physiotherapy in Ahmedabad</h1>
             <p>
-              For patients experiencing severe mobility restrictions, recovering from a stroke, or managing acute orthopedic pain, Dr. Disha Vaghasiya offers comprehensive home visit physiotherapy packages.
+              Looking for the <strong>best physiotherapist for home visits in Ahmedabad</strong>? For patients experiencing severe mobility restrictions, recovering from a stroke, or managing acute orthopedic pain, Dr. Disha Vaghasiya offers comprehensive, highly effective home visit physiotherapy packages.
             </p>
             <ul className="hv-list">
               <li>
