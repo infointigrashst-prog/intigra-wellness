@@ -27,6 +27,13 @@ const BASE_KEYWORDS = [
   'top physiotherapy clinic near me',
   'physiotherapy at home in Ahmedabad',
   'Home Visit Physiotherapy in Ahmedabad',
+  'Best Physiotherapy Treatment At Home',
+  'top rated physiotherapist in Ahmedabad',
+  'physical therapy clinic Ahmedabad',
+  'best female physiotherapist in Ahmedabad',
+  'advanced physiotherapy treatment Ahmedabad',
+  'expert physiotherapist for pain relief',
+  'physiotherapy consultation Ahmedabad',
 ];
 
 export type PageSEO = {
@@ -117,6 +124,13 @@ export const PAGE_SEO: Record<string, PageSEO> = {
       'post surgery home physiotherapy',
       'Best physiotherapist for home visits in Ahmedabad',
       'home visit physiotherapist near me',
+      'Best Physiotherapy Treatment At Home',
+      'at home physical therapy Ahmedabad',
+      'physiotherapy home service near me',
+      'doorstep physiotherapy Ahmedabad',
+      'paralysis treatment at home Ahmedabad',
+      'bedridden patient physiotherapy at home',
+      'private physiotherapist home visit',
     ],
     canonical: `${SITE_URL}/home-visits`,
   },
