@@ -138,11 +138,11 @@ export default function SiteHeader() {
             Book an Appointment
           </Link>
           <div className="drawer-contact-row">
-            <a href="tel:+919426638270" className="drawer-contact-chip">
-              <i className="fa-solid fa-phone"></i> +91-94266 38270
+            <a href="tel:+917096638270" className="drawer-contact-chip">
+              <i className="fa-solid fa-phone"></i> +91-70966 38270
             </a>
             <a
-              href="https://wa.me/919426638270"
+              href="https://wa.me/917096638270"
               target="_blank"
               rel="noreferrer"
               className="drawer-contact-chip wa"
