@@ -5,9 +5,9 @@ import React, { useEffect, useState } from 'react';
 const testimonials = [
   {
     name: 'Rajesh Shah',
-    role: 'Slip Disc Recovery Patient',
+    role: 'Geriatric Rehab Patient',
     stars: 5,
-    quote: 'I was suffering from severe lower back radiating pain due to a slip disc and could barely sit for 10 minutes. Dr. Disha designed a very gentle lumbar extension routine combined with electrotherapy. Within 3 weeks, my leg pain was 90% gone. Truly life-changing! I highly recommend INTIGRA WELLNESS to anyone facing disc issues.',
+    quote: 'I was struggling with severe mobility and balance issues, and was terrified of falling. Dr. Disha designed a very gentle strength and balance routine for me at home. Within a few weeks, I regained my confidence and now walk much more steadily. Truly life-changing! I highly recommend INTIGRA WELLNESS for geriatric care.',
     initials: 'RS'
   },
   {

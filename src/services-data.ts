@@ -74,35 +74,35 @@ export const servicesDetailsData: Record<string, ServiceDetail> = {
       'Use a thin, supportive orthopedic pillow that maintains natural neck curvature.'
     ]
   },
-  'slip-disc': {
-    slug: 'slip-disc',
-    title: 'Slip Disc & Herniated Disc Rehabilitation',
-    category: 'Orthopedic Care',
-    icon: 'fa-solid fa-disease',
-    tagline: 'Structured non-surgical spinal decompression, centralization exercises, and disc recovery.',
-    overview: 'A bulging, herniated, or prolapsed disc (often referred to as a slip disc) can compress surrounding spinal nerves, leading to intense localized pain or radiating sciatica. Our program focuses on mechanical centralization of the disc nucleus using evidence-guided protocols.',
+  'geriatric-rehab': {
+    slug: 'geriatric-rehab',
+    title: 'Geriatric Rehabilitation & Fall Prevention',
+    category: 'Specialised Care',
+    icon: 'fa-solid fa-person-cane',
+    tagline: 'Balance training, strength maintenance, and fall-prevention care for older adults.',
+    overview: 'Aging often brings challenges like muscle weakness, joint stiffness, and balance issues, leading to a higher risk of falls. Our geriatric rehab focuses on maintaining functional independence, improving mobility, and enhancing overall quality of life for seniors.',
     symptoms: [
-      'Sharp, electric shock-like pain traveling down one or both legs.',
-      'Numbness, tingling, or weakness in the foot or toes.',
-      'Pain that worsens with coughing, sneezing, or sitting.',
-      'Difficulty standing straight or walking comfort.'
+      'Difficulty standing up from a chair or walking without support.',
+      'Frequent loss of balance, dizziness, or fear of falling.',
+      'General joint stiffness and muscle weakness.',
+      'Reduced stamina and difficulty performing daily activities.'
     ],
     causes: [
-      'Sudden heavy lifting with a bent and twisted spine.',
-      'Repetitive micro-trauma from cumulative vibrational loads or bad posture.',
-      'Age-related drying or weakening of the outer disc wall.',
-      'Lack of lumbar support combined with weak core stabilization.'
+      'Age-related loss of muscle mass (sarcopenia) and bone density.',
+      'Osteoarthritis or chronic joint degeneration.',
+      'Post-hospitalization weakness or prolonged bed rest.',
+      'Neurological conditions such as Parkinson\'s or mild stroke.'
     ],
     treatments: [
-      'McKenzie centralization exercises to shift disc pressure away from nerves.',
-      'Manual lumbar traction to widen intervertebral spacing.',
-      'Gentle neural mobilization and nerve glides to decrease radiating pain.',
-      'Core activation to build a protective muscular belt around the spine.'
+      'Progressive resistance training customized for seniors.',
+      'Balance and proprioception exercises to reduce fall risk.',
+      'Gait retraining and walking aid (cane/walker) assessment.',
+      'Gentle joint mobilization to relieve stiffness and pain.'
     ],
     homeAdvice: [
-      'Perform prone resting (lying flat on belly) to reduce intradiscal pressure.',
-      'Avoid forward-bending exercises, squats, or toe-touching during acute phases.',
-      'Walk on flat surfaces as tolerated to promote healthy blood flow to spinal structures.'
+      'Ensure pathways in the home are clear of clutter and loose rugs.',
+      'Install grab bars in the bathroom and ensure good lighting.',
+      'Engage in daily light physical activity, like short walks or seated exercises.'
     ]
   },
   'frozen-shoulder': {

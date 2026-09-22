@@ -16,7 +16,7 @@ export default function SiteFooter() {
               {/* <b>INTIGRA<small style={{ display: 'block', fontSize: '0.58rem', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--teal-light)' }}>Wellness</small></b> */}
             </div>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.84rem', marginTop: '16px' }}>
-              Professional physiotherapy clinic in Ahmedabad under Dr. Disha Vaghasiya. Custom recovery plans designed to bring you strength, balance, and mobility.
+              Professional home visit physiotherapy in Ahmedabad under Dr. Disha Vaghasiya (PT). Custom recovery plans designed to bring you strength, balance, and mobility.
             </p>
             <div className="footer-social">
               <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><i className="fa-brands fa-instagram" style={{ color: '#fff' }}></i></a>
@@ -43,15 +43,12 @@ export default function SiteFooter() {
               <li><Link href="/services?cat=neuro">Stroke &amp; Paralysis</Link></li>
               <li><Link href="/services?cat=special">Geriatric &amp; Pediatric</Link></li>
               <li><Link href="/services?cat=technique">Manual &amp; Dry Needling</Link></li>
-              <li><Link href="/contact-us">Book Clinic Appointment</Link></li>
+              <li><Link href="/contact-us">Book Home Visit Appointment</Link></li>
             </ul>
           </div>
 
           <div>
             <h5>Reach Us Direct</h5>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.84rem', marginBottom: '8px' }}>
-              <b>Clinic:</b> {clinicContactDetails.address.split(',').slice(1, 5).join(',')}
-            </p>
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.84rem' }}>
               <b>Phone:</b> {clinicContactDetails.phone}<br />
               <b>Email:</b> {clinicContactDetails.email}
@@ -72,7 +69,7 @@ export default function SiteFooter() {
           <img src="/assets/intigra-wellness-logo_4.jpeg" alt="INTIGRA WELLNESS" />
           <div>
             <b>INTIGRA WELLNESS</b>
-            <span>Physiotherapy &amp; Rehabilitation, Ahmedabad</span>
+            <span>Home Visit Physiotherapy, Ahmedabad</span>
           </div>
         </div>
 
@@ -104,11 +101,7 @@ export default function SiteFooter() {
           <Link href="/contact-us"><i className="fa-solid fa-envelope"></i><span>Contact</span></Link>
         </div>
 
-        {/* Address strip */}
-        <div className="fmob-address">
-          <i className="fa-solid fa-location-dot"></i>
-          <span>{clinicContactDetails.address}</span>
-        </div>
+
 
         {/* Social Row */}
         <div className="fmob-social">
@@ -126,7 +119,7 @@ export default function SiteFooter() {
         {/* Copyright */}
         <div className="fmob-copy">
           &copy; {year} {clinicContactDetails.name}. All Rights Reserved.<br />
-          <small>Dr. Disha Vaghasiya — {clinicContactDetails.degree}</small>
+          <small>{clinicContactDetails.doctorName} — {clinicContactDetails.degree}</small>
         </div>
       </div>
     </footer>

@@ -6,7 +6,7 @@
 
 export const SITE_URL = 'https://www.intigrawellness.com';
 export const SITE_NAME = 'INTIGRA WELLNESS';
-export const DOCTOR_NAME = 'Dr. Disha Vaghasiya';
+export const DOCTOR_NAME = 'Dr. Disha Vaghasiya (PT)';
 export const DEGREE = 'BPT — Registered Physiotherapist';
 export const PHONE = '+91-7096638270';
 export const EMAIL = 'dr.dishavaghasiya@gmail.com';
@@ -21,7 +21,7 @@ const BASE_KEYWORDS = [
   'Dr Disha Vaghasiya',
   'INTIGRA WELLNESS',
   'home physiotherapy Ahmedabad',
-  'rehabilitation clinic Ahmedabad',
+  'rehabilitation service Ahmedabad',
   'Bodakdev physiotherapy',
   'best physiotherapist in Ahmedabad',
   'top physiotherapy clinic near me',
@@ -49,14 +49,14 @@ export type PageSEO = {
 export const PAGE_SEO: Record<string, PageSEO> = {
 
   '/': {
-    title: `${SITE_NAME} | Physiotherapy & Rehabilitation Clinic, Ahmedabad — ${DOCTOR_NAME}`,
+    title: `${SITE_NAME} | Home Visit Physiotherapy, Ahmedabad — ${DOCTOR_NAME}`,
     description:
-      `${SITE_NAME} is a leading physiotherapy clinic in Ahmedabad, Gujarat. ${DOCTOR_NAME} offers personalised treatment for back pain, neck pain, slip disc, frozen shoulder, knee pain, stroke rehabilitation and home visit physiotherapy across Ahmedabad.`,
+      `${SITE_NAME} offers expert home visit physiotherapy across Ahmedabad, Gujarat. ${DOCTOR_NAME} provides personalised treatment for back pain, neck pain, geriatric rehab, frozen shoulder, knee pain, stroke rehabilitation and mobility care at your home.`,
     keywords: [
       ...BASE_KEYWORDS,
       'back pain treatment Ahmedabad',
       'neck pain physiotherapy',
-      'slip disc treatment',
+      'geriatric rehab',
       'frozen shoulder physiotherapy',
       'knee pain treatment Ahmedabad',
     ],
@@ -66,7 +66,7 @@ export const PAGE_SEO: Record<string, PageSEO> = {
   '/about-us': {
     title: `About ${DOCTOR_NAME} | ${SITE_NAME} — Physiotherapist Ahmedabad`,
     description:
-      `Meet ${DOCTOR_NAME}, BPT Registered Physiotherapist at ${SITE_NAME}, Bodakdev, Ahmedabad. With 12+ years of clinical experience, Dr. Disha specialises in orthopedic rehab, neurological recovery, and personalised home visit physiotherapy.`,
+      `Meet ${DOCTOR_NAME}, BPT Registered Physiotherapist at ${SITE_NAME}, Ahmedabad. With 4+ years of focused clinical experience, Dr. Disha specialises in orthopedic rehab, neurological recovery, and personalised home visit physiotherapy.`,
     keywords: [
       ...BASE_KEYWORDS,
       'about Dr Disha Vaghasiya',
@@ -80,14 +80,14 @@ export const PAGE_SEO: Record<string, PageSEO> = {
   '/services': {
     title: `Physiotherapy Services in Ahmedabad | ${SITE_NAME}`,
     description:
-      `Explore comprehensive physiotherapy services at ${SITE_NAME} — back pain, neck pain, slip disc, frozen shoulder, knee pain, sports injury, stroke & paralysis rehab, neurological conditions, pediatric and geriatric physiotherapy in Ahmedabad.`,
+      `Explore comprehensive physiotherapy services at ${SITE_NAME} — back pain, neck pain, geriatric rehab, frozen shoulder, knee pain, sports injury, stroke & paralysis rehab, neurological conditions, and pediatric physiotherapy in Ahmedabad.`,
     keywords: [
       ...BASE_KEYWORDS,
       'orthopedic physiotherapy Ahmedabad',
       'neurological rehabilitation Ahmedabad',
       'sports injury physiotherapy',
       'pediatric physiotherapy Ahmedabad',
-      'geriatric physiotherapy',
+      'geriatric rehab',
       'dry needling Ahmedabad',
       'electrotherapy Ahmedabad',
     ],
@@ -151,13 +151,13 @@ export const PAGE_SEO: Record<string, PageSEO> = {
   },
 
   '/contact-us': {
-    title: `Book Physiotherapy Appointment in Ahmedabad | ${SITE_NAME}`,
+    title: `Book Home Visit Physiotherapy in Ahmedabad | ${SITE_NAME}`,
     description:
-      `Book a physiotherapy consultation with ${DOCTOR_NAME} at ${SITE_NAME}, Bodakdev, Ahmedabad. Clinic appointments and home visits available. Call ${PHONE} or fill our appointment form.`,
+      `Book a home visit physiotherapy consultation with ${DOCTOR_NAME} across Ahmedabad. Personalised care delivered to your doorstep. Call ${PHONE} or fill our appointment form.`,
     keywords: [
       ...BASE_KEYWORDS,
       'book physiotherapy appointment Ahmedabad',
-      'physiotherapy clinic Bodakdev',
+      'home visit physiotherapist contact',
       'contact physiotherapist Ahmedabad',
       'physiotherapy appointment Gujarat',
     ],

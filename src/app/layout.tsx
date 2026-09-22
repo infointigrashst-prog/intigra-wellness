@@ -8,16 +8,16 @@ import GoogleAnalytics from "../components/GoogleAnalytics";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Physiotherapy & Rehabilitation Clinic, Ahmedabad`,
+    default: `${SITE_NAME} | Home Visit Physiotherapy, Ahmedabad`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    `${SITE_NAME} is a leading physiotherapy clinic in Ahmedabad led by ${DOCTOR_NAME}. Personalised treatment for back pain, neck pain, slip disc, frozen shoulder, knee pain, stroke & paralysis rehab, and home visit physiotherapy across Ahmedabad.`,
+    `${SITE_NAME} offers expert home visit physiotherapy in Ahmedabad led by ${DOCTOR_NAME}. Personalised treatment for back pain, neck pain, geriatric rehab, frozen shoulder, knee pain, and stroke & paralysis rehab at your home.`,
   keywords: [
     'physiotherapy Ahmedabad', 'physiotherapist Ahmedabad',
     'Dr Disha Vaghasiya', 'INTIGRA WELLNESS',
     'home physiotherapy Ahmedabad', 'back pain treatment',
-    'slip disc treatment', 'frozen shoulder physiotherapy',
+    'geriatric rehab', 'frozen shoulder physiotherapy',
     'stroke rehabilitation Ahmedabad',
   ].join(', '),
   authors: [{ name: SITE_NAME }, { name: DOCTOR_NAME }],
@@ -46,24 +46,24 @@ export const metadata: Metadata = {
   },
 };
 
-/** Full JSON-LD schema for the MedicalClinic */
+/** Full JSON-LD schema for the Home Visit Physiotherapy */
 const clinicSchema = {
   '@context': 'https://schema.org',
-  '@type': 'MedicalClinic',
-  '@id': `${SITE_URL}/#clinic`,
+  '@type': 'Physician',
+  '@id': `${SITE_URL}/#doctor`,
   name: SITE_NAME,
   url: SITE_URL,
   logo: LOGO,
   image: LOGO,
   description:
-    'Physiotherapy and rehabilitation clinic in Ahmedabad led by Dr. Disha Vaghasiya — clinic and home visit physiotherapy.',
+    'Expert home visit physiotherapy in Ahmedabad led by Dr. Disha Vaghasiya.',
   founder: {
     '@type': 'Person',
-    '@id': `${SITE_URL}/#doctor`,
+    '@id': `${SITE_URL}/#founder`,
     name: DOCTOR_NAME,
     jobTitle: 'Registered Physiotherapist',
-    description: 'BPT — Registered Physiotherapist with 12+ years of clinical experience.',
-    worksFor: { '@id': `${SITE_URL}/#clinic` },
+    description: 'BPT — Registered Physiotherapist with 4+ years of clinical experience.',
+    worksFor: { '@id': `${SITE_URL}/#doctor` },
     telephone: PHONE,
     email: EMAIL,
   },
@@ -75,11 +75,9 @@ const clinicSchema = {
   ],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shapath Complex-1, Opp. Rajpath Club',
-    addressLocality: 'Bodakdev',
+    addressLocality: 'Ahmedabad',
     addressRegion: 'Gujarat',
     addressCountry: 'IN',
-    postalCode: '380054',
   },
   geo: {
     '@type': 'GeoCoordinates',
@@ -88,26 +86,6 @@ const clinicSchema = {
   },
   telephone: PHONE,
   email: EMAIL,
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '13:00',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '17:00',
-      closes: '20:30',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Saturday'],
-      opens: '09:00',
-      closes: '14:00',
-    },
-  ],
   areaServed: {
     '@type': 'City',
     name: 'Ahmedabad',

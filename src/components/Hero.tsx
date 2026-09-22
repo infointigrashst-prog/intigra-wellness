@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 const statsData = [
-  { target: 12, suffix: '+', label: 'Years of Clinical Focus' },
-  { target: 4500, suffix: '+', label: 'Patients Guided to Recovery' },
-  { target: 22, suffix: '+', label: 'Specialised Treatments' },
+  { target: 4, suffix: '+', label: 'Years Experience' },
+  { target: 200, suffix: '+', label: 'Patients Guided to Recovery' },
+  { target: 14, suffix: '+', label: 'Specialised Treatments' },
   { target: 98, suffix: '%', label: 'Patient Satisfaction' }
 ];
 
@@ -49,7 +49,7 @@ export default function Hero() {
             <span className="italic-accent">Live Better.</span>
           </h1>
           <p className="lead">
-            Dr. Disha Vaghasiya designs personalised physiotherapy plans that treat the root cause of pain — combining advanced rehabilitation techniques with the comfort of our clinic or our specialized <strong>Home Visit Physiotherapy in Ahmedabad</strong>.
+            Dr. Disha Vaghasiya (PT) designs personalised physiotherapy plans that treat the root cause of pain — combining advanced rehabilitation techniques with the comfort of our specialized <strong>Home Visit Physiotherapy in Ahmedabad</strong>.
           </p>
           <div className="hero-ctas">
             <a href="/contact-us#appointment" className="btn-brand">

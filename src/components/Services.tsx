@@ -6,7 +6,7 @@ const servicesData = [
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-heart-pulse', title: 'Back Pain', desc: 'Targeted relief for acute & chronic lower and upper back pain.', slug: 'back-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-head-side-cough', title: 'Neck Pain', desc: 'Mobility restoration for stiff, painful or restricted neck movement.', slug: 'neck-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-bone', title: 'Cervical Pain', desc: 'Cervical spondylosis & nerve-related neck-shoulder discomfort.', slug: 'neck-pain' },
-  { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-disease', title: 'Slip Disc', desc: 'Non-surgical, structured recovery for herniated / prolapsed discs.', slug: 'slip-disc' },
+
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-shoe-prints', title: 'Knee Pain', desc: 'Strengthening & alignment therapy for knee pain and instability.', slug: 'back-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-joint', title: 'Arthritis', desc: 'Joint-friendly movement therapy to ease stiffness and swelling.', slug: 'back-pain' },
   { cat: 'ortho', tag: 'Ortho', icon: 'fa-solid fa-snowflake', title: 'Frozen Shoulder', desc: 'Progressive mobilisation to restore full shoulder range of motion.', slug: 'frozen-shoulder' },
@@ -20,7 +20,7 @@ const servicesData = [
 
   // Specialised Care
   { cat: 'special', tag: 'Special', icon: 'fa-solid fa-child-reaching', title: 'Pediatric Physiotherapy', desc: 'Gentle, developmental physiotherapy designed for children.', slug: 'stroke-rehabilitation' },
-  { cat: 'special', tag: 'Special', icon: 'fa-solid fa-person-cane', title: 'Geriatric Physiotherapy', desc: 'Balance, strength & fall-prevention care for older adults.', slug: 'stroke-rehabilitation' },
+  { cat: 'special', tag: 'Special', icon: 'fa-solid fa-person-cane', title: 'Geriatric Rehab', desc: 'Balance, strength & fall-prevention care for older adults.', slug: 'geriatric-rehab' },
   { cat: 'special', tag: 'Special', icon: 'fa-solid fa-venus', title: 'Women\'s Health Physiotherapy', desc: 'Pre/post-natal, pelvic-floor & women-specific rehabilitation.', slug: 'stroke-rehabilitation' },
   { cat: 'special', tag: 'Special', icon: 'fa-solid fa-ruler-vertical', title: 'Posture Correction', desc: 'Screen-life & lifestyle-driven posture realignment programmes.', slug: 'neck-pain' },
   { cat: 'special', tag: 'Special', icon: 'fa-solid fa-briefcase-medical', title: 'Orthopedic Physiotherapy', desc: 'Whole-body musculoskeletal assessment & recovery planning.', slug: 'back-pain' },

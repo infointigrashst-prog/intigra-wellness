@@ -7,8 +7,7 @@ export default function AppointmentForm() {
     phone: '',
     email: '',
     condition: 'backpain',
-    message: '',
-    isHomeVisit: false
+    message: ''
   });
 
   const [submitted, setSubmitted] = useState(false);
@@ -22,12 +21,7 @@ export default function AppointmentForm() {
     });
   };
 
-  const handleToggle = () => {
-    setFormData({
-      ...formData,
-      isHomeVisit: !formData.isHomeVisit
-    });
-  };
+
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -37,25 +31,22 @@ export default function AppointmentForm() {
     const conditionLabels: Record<string, string> = {
       backpain: 'Back Pain / Spine Care',
       neckpain: 'Neck / Cervical Pain',
-      slipdisc: 'Slip Disc Recovery',
+      geriatric: 'Geriatric Rehab',
       shoulder: 'Frozen Shoulder / Joint Pain',
       sports: 'Sports Injury Rehabilitation',
-      neuro: 'Stroke / Paralysis Rehabilitation',
-      home: 'Home Visit Physiotherapy'
+      neuro: 'Stroke / Paralysis Rehabilitation'
     };
 
     const conditionText = conditionLabels[formData.condition] || formData.condition;
-    const homeVisitText = formData.isHomeVisit ? 'Yes' : 'No';
     const messageBody = formData.message ? formData.message : 'N/A';
 
-    const textMessage = `Hello Dr. Disha Vaghasiya (INTIGRA WELLNESS), I would like to book a physiotherapy appointment.
+const textMessage = `Hello Dr. Disha Vaghasiya (PT) (INTIGRA WELLNESS), I would like to book a home visit physiotherapy appointment.
 
 Here are my details:
 - *Name:* ${formData.name}
 - *Phone:* ${formData.phone}
 - *Email:* ${formData.email || 'N/A'}
 - *Condition:* ${conditionText}
-- *Request Home Visit:* ${homeVisitText}
 - *Message/Symptoms:* ${messageBody}`;
 
     const dialNumber = clinicContactDetails.phoneDialable.replace('+', '');
@@ -72,8 +63,7 @@ Here are my details:
         phone: '',
         email: '',
         condition: 'backpain',
-        message: '',
-        isHomeVisit: false
+        message: ''
       });
     }, 1200);
   };
@@ -84,9 +74,9 @@ Here are my details:
         <div className="appointment-wrap">
           <div className="appt-info" data-aos="fade-right">
             <span className="eyebrow">Consultation Booking</span>
-            <h1 className="h-lg">Book Your Recovery Session</h1>
+            <h1 className="h-lg">Book Your Home Visit Session</h1>
             <p>
-              Fill out the details to request an appointment. Dr. Disha Vaghasiya or our wellness coordinator will contact you to confirm a time slot.
+              Fill out the details to request an appointment. Dr. Disha Vaghasiya (PT) or our wellness coordinator will contact you to confirm a time slot.
             </p>
             <ul className="appt-info-list">
               <li>
@@ -106,15 +96,7 @@ Here are my details:
                   </span>
                 </div>
               </li>
-              <li>
-                <div className="ic">
-                  <i className="fa-solid fa-location-dot"></i>
-                </div>
-                <div>
-                  <b>Clinic Location</b>
-                  <span>{clinicContactDetails.locationBrief}</span>
-                </div>
-              </li>
+
               <li>
                 <div className="ic">
                   <i className="fa-solid fa-envelope"></i>
@@ -140,7 +122,7 @@ Here are my details:
               <div className="appt-form text-center py-5">
                 <i className="fa-solid fa-circle-check" style={{ fontSize: '3.6rem', color: 'var(--teal)', marginBottom: '20px' }}></i>
                 <h3>Appointment Requested!</h3>
-                <p className="mt-2 text-muted">Thank you. We will verify clinical availability and call/message you shortly to confirm.</p>
+                <p className="mt-2 text-muted">Thank you. We will check availability and call/message you shortly to confirm.</p>
                 <button 
                   className="btn-brand mt-4" 
                   onClick={() => setSubmitted(false)}
@@ -200,27 +182,11 @@ Here are my details:
                   >
                     <option value="backpain">Back Pain / Spine Care</option>
                     <option value="neckpain">Neck / Cervical Pain</option>
-                    <option value="slipdisc">Slip Disc Recovery</option>
+                    <option value="geriatric">Geriatric Rehab</option>
                     <option value="shoulder">Frozen Shoulder / Joint Pain</option>
                     <option value="sports">Sports Injury Rehabilitation</option>
                     <option value="neuro">Stroke / Paralysis Rehabilitation</option>
-                    <option value="home">Home Visit Physiotherapy</option>
                   </select>
-                </div>
-
-                <div className="toggle-row">
-                  <div>
-                    <b style={{ display: 'block', fontSize: '0.88rem', color: 'var(--ink)' }}>Request Home Visit</b>
-                    <span style={{ fontSize: '0.74rem', color: 'var(--muted)' }}>Check if you require treatment at your location in Ahmedabad.</span>
-                  </div>
-                  <label className="switch">
-                    <input 
-                      type="checkbox" 
-                      checked={formData.isHomeVisit}
-                      onChange={handleToggle}
-                    />
-                    <span className="slider-toggle"></span>
-                  </label>
                 </div>
 
                 <div className="field">

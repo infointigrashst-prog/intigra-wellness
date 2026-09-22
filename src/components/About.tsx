@@ -4,9 +4,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 
 const stats = [
-  { value: 12, suffix: '+', label: 'Years Experience' },
-  { value: 4500, suffix: '+', label: 'Patients Treated' },
-  { value: 22, suffix: '+', label: 'Specialisations' },
+  { value: 4, suffix: '+', label: 'Years Experience' },
+  { value: 200, suffix: '+', label: 'Patients Treated' },
+  { value: 14, suffix: '+', label: 'Specialisations' },
   { value: 98, suffix: '%', label: 'Satisfaction Rate' },
 ];
 
@@ -22,9 +22,9 @@ const credentials = [
     desc: 'Every plan is built around your body, pain history and recovery goals.',
   },
   {
-    icon: 'fa-house-medical-flag',
-    title: 'Clinic & Home Visit Care',
-    desc: 'In-clinic sessions or personalised physiotherapy at home in Ahmedabad.',
+    icon: 'fa-solid fa-house-medical',
+    title: 'Home Visit Care',
+    desc: 'Personalised physiotherapy at home in Ahmedabad.',
   },
   {
     icon: 'fa-chart-line',
@@ -67,7 +67,7 @@ export default function About() {
           <div className="about-hero-left">
             <span className="eyebrow" data-aos="fade-up">Meet Your Physiotherapist</span>
             <h1 className="h-lg about-hero-title" data-aos="fade-up" data-aos-delay="80">
-              Dr. Disha Vaghasiya<br />
+              Dr. Disha Vaghasiya (PT)<br />
               <span className="about-hero-accent">Care that listens before it treats.</span>
             </h1>
             <p className="about-hero-sub" data-aos="fade-up" data-aos-delay="160">
@@ -108,7 +108,7 @@ export default function About() {
               </div>
               <div>
                 <b>Registered Physiotherapist</b>
-                <span>Dr. Disha Vaghasiya · Ahmedabad</span>
+                <span>Dr. Disha Vaghasiya (PT) · Ahmedabad</span>
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export default function About() {
           <p className="about-lead">
             At INTIGRA WELLNESS, every treatment plan begins with a thorough assessment
             of posture, movement patterns and lifestyle — not just the site of pain.
-            Dr. Disha Vaghasiya blends evidence-based manual therapy, modern electrotherapy
+            Dr. Disha Vaghasiya (PT) blends evidence-based manual therapy, modern electrotherapy
             and structured exercise rehabilitation to help patients regain strength,
             mobility and confidence.
           </p>
@@ -161,7 +161,7 @@ export default function About() {
               <i className="fa-solid fa-calendar-check"></i> Book a Consultation
             </Link>
             <a href="tel:+917096638270" className="btn-outline">
-              <i className="fa-solid fa-phone"></i> Call Clinic
+              <i className="fa-solid fa-phone"></i> Call
             </a>
           </div>
         </div>
