@@ -160,9 +160,6 @@ export default function About() {
             <Link href="/contact-us#appointment" className="btn-brand">
               <i className="fa-solid fa-calendar-check"></i> Book a Consultation
             </Link>
-            <a href="tel:+917096638270" className="btn-outline">
-              <i className="fa-solid fa-phone"></i> Call
-            </a>
           </div>
         </div>
       </div>

@@ -1512,7 +1512,7 @@ header#site-header.scrolled .brand-logo-img {
 }
 
 @media (max-width: 480px) {
-  .about-ctas { flex-direction: column; }
+  .about-ctas { flex-direction: column; margin-bottom: 32px; }
   .about-ctas a { width: 100%; justify-content: center; }
   .about-hero-banner { padding: 48px 0 40px; }
   .about-hero-title { font-size: 1.6rem; }
